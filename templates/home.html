@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<title>Book My Hall</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+
+.w3-padding-16 {
+    padding-top: 100px!important;
+    padding-bottom: 16px!important;
+}
+
+img {
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+    background-color: #d0b009;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1
+a {
+	color: #ffffff;
+}
+
+h2
+a {
+	color: #ffffff;
+}
+
+h3,
+a {
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+<!--	position: fixed;-->
+}
+
+.main-nav {
+	margin-top: 5px;
+<!--	position: fixed;-->
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+<!--	position: fixed;-->
+}
+
+.main-nav a {
+	color: #ffffff;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: fixed;
+}
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1150px;}
+	}
+}
+
+
+
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		background-color: #000000;}
+}
+
+
+
+</style>
+</head>
+
+
+	<header class="header">
+		<h1 class="logo"><a href="#">Book My Hall</a></h1>
+      <ul class="main-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/profilePg.html">Profile</a></li>
+          <li><a href="/contact_us.html">Contact</a></li>
+         <li><a href="/signup.html">{{result[3]}}</a></li>
+      </ul>
+	</header>
+
+
+<body>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:0px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+
+      <a href="/halls/AllHall/{{result[1][0]}}"/>
+      <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][0]}}"  style="width:100%">
+      <h3>{{result[1][0]}}</h3>
+
+    </div>
+    <div class="w3-quarter">
+       <a href="/halls/AllHall/{{result[1][1]}}"/>
+      <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][1]}}" alt="Steak" style="width:100%">
+      <h3>{{result[1][1]}}</h3>
+
+    </div>
+    <div class="w3-quarter">
+      <a href="/halls/AllHall/{{result[1][2]}}"/>
+      <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][2]}}" style="width:100%">
+      <h3>{{result[1][2]}}</h3>
+
+    </div>
+    <div class="w3-quarter">
+      <a href="/halls/AllHall/{{result[1][3]}}"/>
+      <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][3]}}" style="width:100%">
+      <h3>{{result[1][3]}}a</h3>
+
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="/halls/AllHall/{{result[1][4]}}"/>
+      <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][4]}}"  style="width:80%">
+      <h3>{{result[1][4]}}</h3>
+
+    </div>
+    <div class="w3-quarter">
+      <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][5]}}" alt="Salmon" style="width:100%">
+      <a href="/halls/AllHall/{{result[1][5]}}"/>
+      <h3>{{result[1][5]}}</h3>
+
+    </div>
+    <div class="w3-quarter">
+      <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][6]}}"  style="width:100%">
+      <a href="/halls/AllHall/{{result[1][6]}}"/>
+      <h3>{{result[1][6]}}</h3>
+
+    </div>
+    <div class="w3-quarter">
+      <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][7]}}"  style="width:100%">
+      <a href="/halls/AllHall/{{result[1][7]}}"/>
+      <h3>{{result[1][7]}}</h3>
+
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">
+    <img src="data:image/jpeg;charset=utf-8;base64,{{result[2][2]}}" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>About Me!</b></h4>
+      <h6><i>My Self Mohit Chatterjee, Python Developer</i></h6>
+      <p>Passionate about implementing and launching new projects. I have the ability to solve complex problems with a simplistic approach and I am an enthusiastic engineer having a keen interest in the IT field. Worked in various technologies such as C, C++, Implementing of Data Structure in C language, Python, DevOps with ML, Basic Linux, Basic Docker and I am also familiar with Python libraries such as NumPy and Pandas and also working in DBMS. I use to write Blogs also in life-related Experiences.</p>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Social Media</h3>
+      <a href="#">facebook</a></br>
+      <a href="#">Instagram</a></br>
+      <a href="#">Twitter</a></br>
+
+    </div>
+
+    <div class="w3-third">
+      <h3>Most Searched Hall</h3>
+      <ul class="w3-ul w3-hoverable">
+        <a href="/halls/AllHall"/>
+        <img src="data:image/jpeg;charset=utf-8;base64,{{result[0][0]}}" class="w3-left w3-margin-right" style="width:220px">
+        <li class="w3-padding-16">
+
+          <span class="w3-large">{{result[1][0]}}</span><br>
+
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Hotel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Lunch</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Wedding Hall</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Banquite hall</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Marriage</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Premium Hall</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">lauge</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Buffet</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Musical Hall</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Catering</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Wedding Hall</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+
+
+
+
+
+document.getElementById("contactUs").addEventListener("mouseover", mouseOver);
+document.getElementById("contactUs").addEventListener("mouseout", mouseOut);
+function mouseOver() {
+  document.getElementById("contactUs").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("contactUs").style.color = "black";
+}
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function contactpg() {
+  window.location.href='/contact_us.html';
+}
+
+function loginpg() {
+  window.location.href='/login.html';
+}
+
+</script>
+
+</body>
+</html>
